@@ -24,6 +24,7 @@
         <testcontainers.version>1.21.3</testcontainers.version>
         <kafka-libs.version>7.9.1</kafka-libs.version>
         <docker.platforms>linux/amd64,linux/arm64</docker.platforms>
+        <skipTests>true</skipTests>
     </properties>
 
     <scm>

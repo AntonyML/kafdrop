@@ -1,20 +1,16 @@
-<#--
- Copyright 2021 Kafdrop contributors.
-
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
-
- http://www.apache.org/licenses/LICENSE-2.0
-
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
+<#-- 
+  Copyright 2021 Kafdrop contributors.
+  Licensed under the Apache License, Version 2.0
 -->
 <#import "/spring.ftl" as spring />
-<div class="pb-0 mt-5 mb-4">
+
+<!-- Bloque principal -->
+<div class="pb-0 mt-5 mb-4" style="background-color:#0C1A1A; color:#ffffff; min-height:150px;">
     <div class="container">
-    </div>
+            <!-- Texto descriptivo o créditos -->
+        <p style="color:#ffffff;">
+            Mas información <strong>antony.mongelopez@ucr.ac.cr</strong>
+        </p>
+
+        </div>
 </div>

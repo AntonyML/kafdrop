@@ -6,12 +6,6 @@ server:
     path: /error
     whitelabel:
       enabled: false
-  ssl:
-    key-store-type: ${SSL_KEY_STORE_TYPE:PKCS12}
-    key-store: ${SSL_KEY_STORE:}
-    key-store-password: ${SSL_KEY_STORE_PASSWORD:}
-    key-alias: ${SSL_KEY_ALIAS:}
-    enabled: ${SSL_ENABLED:false}
 
 spring:
   jmx:
@@ -24,6 +18,12 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+  resources:
+    cache:
+      period: 0       # Desactiva el cache de recursos estáticos
+    chain:
+      cache: false    # Desactiva el cache de recursos estáticos
+    static-locations: classpath:/static/, file:src/main/resources/static/  # Permite leer directo desde disco
 
 management:
   endpoints:
